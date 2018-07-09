@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员等级设置</title>
+<link href="css/init.css?v=<%=now()%>" rel="stylesheet" type="text/css">
+<link href="css/main.css?v=3242" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="topline">
+<div id="adminTitle">会员管理 > 会员等级设置</div>
+</div>
+<div id="adminbody">
+<form name="form1" method="post" action="">
+  <table width="100%" border="0" cellspacing="0" cellpadding="5" class="tableLists">
+	<tr class="tableHeader">
+	  <td align="center">ID</td>
+	  <td align="center">会员等级</td>
+	  <td align="center">签到天数</td>
+	  <td align="center">达标积分</td>
+	  <td align="center">等级默认权限</td>
+	  <td align="center">修改</td>
+	  <td align="center">删除</td>
+	</tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+      <td align="center">士兵</td>
+      <td align="center">5天</td>
+      <td align="center">50分</td>
+      <td align="center">等级默认权限</td>
+      <td align="center">修改</td>
+      <td align="center">删除</td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox2" value="checkbox"></td>
+      <td align="center">班长</td>
+      <td align="center">30天</td>
+      <td align="center">300分</td>
+      <td align="center">等级默认权限</td>
+      <td align="center">修改</td>
+      <td align="center">删除</td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox3" value="checkbox"></td>
+      <td align="center">排长</td>
+      <td align="center">60天</td>
+      <td align="center">600分</td>
+      <td align="center">等级默认权限 </td>
+      <td align="center">修改</td>
+      <td align="center">删除</td>
+    </tr>
+  </table>
+</form>
+</div>
+
+<div style="width:60%;margin:auto;margin-top:20px;">
+<form name="form2" method="post" action="">
+  <table width="100%" border="0" cellspacing="0" cellpadding="10" class="addEditTable">
+    <tr>
+      <td align="right">会员等级</td>
+      <td><input type="text" name="textfield"></td>
+      <td align="right">签到天数</td>
+      <td><input type="text" name="textfield2"></td>
+      <td align="right">达标积分</td>
+      <td><input type="text" name="textfield3"></td>
+      <td><input type="submit" name="Submit" value="添加"></td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</div>
+	
+</body>
+</html>

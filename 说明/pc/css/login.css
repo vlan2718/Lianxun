@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { background:#182948}
+.loginPut {width:320px; height:30px; padding:5px;background:#FFF; color:#CCC;border:1px solid #CCC; border-radius:5px}
+
+.loginBtn {width:330px; height:40px; padding:5px;background:#409eff; color:#FFF; border:0px solid #CCC; border-radius:5px; cursor:pointer}
+

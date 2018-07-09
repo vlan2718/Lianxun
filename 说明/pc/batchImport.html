@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>批量导入信息</title>
+<link href="css/init.css?v=<%=now()%>" rel="stylesheet" type="text/css">
+<link href="css/main.css?v=98080" rel="stylesheet" type="text/css">
+<style>
+.selectForm td { background:#FFFFCC; color:#000000}
+#showDataList { display:none;}
+</style>
+<script src="/js/jquery-1.8.2.min.js"></script>
+<script>
+$(function(){
+	$("#showDataBtn").click(function(){
+		$("#showDataList").show();
+	});
+});
+</script>
+</head>
+
+<body>
+	<div id="topline">
+		<div id="adminTitle">信息管理 > 批量导入信息</div>
+		<div id="rightFun"><a href="newsadmin.html">返回列表</a></div>
+	</div>
+	
+	<div id="adminbody">
+	  <form name="form1" method="post" action="" class="selectForm">
+	    <table width="100%" border="0" cellspacing="0" cellpadding="5" class="tableLists">
+          <tr>
+            <td width="16%" align="right" bgcolor="#f0f0f0">导入类型</td>
+            <td width="63%" colspan="3" bgcolor="#f0f0f0"><a href="#">
+              <select name="select3">
+                <option selected>选择标准Excel文件</option>
+                <option>连接原录入系统数据库</option>
+              </select>
+            </a></td>
+            <td width="31%" bgcolor="#f0f0f0">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right">选择文件</td>
+            <td colspan="3"><input type="file" name="textfield5">
+            <input type="button" name="Submit2" value="上传"></td>
+            <td align="center">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="right">选择数据表</td>
+            <td><select name="select">
+              <option>表1</option>
+              <option>表2</option>
+            </select>            </td>
+            <td align="right">1页显示条数</td>
+            <td><input name="textfield" type="text" value="10" size="3">
+            条</td>
+            <td align="left"><input type="button" name="Submit" id="showDataBtn" value="呈现数据"></td>
+          </tr>
+        </table>
+      </form><br>
+
+	  
+	  
+	  <form name="form1" method="get" action="newsadmin.html" id="showDataList">
+  <table width="100%" border="0" cellspacing="0" cellpadding="5" class="tableLists">
+	<tr class="tableHeader">
+	  <td width="3%" align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+	  <td width="5%" align="center">序</td>
+	  <td width="54%">信息标题</td>
+	  <td width="21%" align="center">发布时间</td>
+	  <td width="17%" align="center">操作日志</td>
+	</tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox2" value="checkbox"></td>
+      <td align="center">10</td>
+      <td><a href="#" onClick="alert('本文正在被其它管理员修订中，暂不可编辑！');return false();">美英法打击叙利亚之后 石油价格会疯涨吗？</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox3" value="checkbox"></td>
+      <td align="center">9</td>
+      <td><a href="newsEdit.html">11家境外机构备案 铁矿石期货国际化5月4日起飞</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox4" value="checkbox"></td>
+      <td align="center">8</td>
+      <td><a href="newsEdit.html">美英法打击叙利亚之后 石油价格会疯涨吗？</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox5" value="checkbox"></td>
+      <td align="center">7</td>
+      <td><a href="newsEdit.html">11家境外机构备案 铁矿石期货国际化5月4日起飞</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox6" value="checkbox"></td>
+      <td align="center">6</td>
+      <td><a href="newsEdit.html">美英法打击叙利亚之后 石油价格会疯涨吗？</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox7" value="checkbox"></td>
+      <td align="center">5</td>
+      <td><a href="newsEdit.html">11家境外机构备案 铁矿石期货国际化5月4日起飞</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox8" value="checkbox"></td>
+      <td align="center">4</td>
+      <td><a href="newsEdit.html">美英法打击叙利亚之后 石油价格会疯涨吗？</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox9" value="checkbox"></td>
+      <td align="center">3</td>
+      <td><a href="newsEdit.html">11家境外机构备案 铁矿石期货国际化5月4日起飞</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox10" value="checkbox"></td>
+      <td align="center">2</td>
+      <td><a href="newsEdit.html">美英法打击叙利亚之后 石油价格会疯涨吗？</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox102" value="checkbox"></td>
+      <td align="center">1</td>
+      <td><a href="newsEdit.html">11家境外机构备案 铁矿石期货国际化5月4日起飞</a></td>
+      <td align="center">2018-4-6 13:30:23</td>
+      <td align="center"><a href="#">操作日志</a></td>
+    </tr>
+  </table>
+  <br>
+  <table width="100%" border="0" cellspacing="0" cellpadding="5" class="tableLists">
+          <tr>
+            <td width="16%" align="right" bgcolor="#f0f0f0">导入到类</td>
+            <td width="63%" bgcolor="#f0f0f0"><a href="#">
+              <select name="select3">
+                <option>选择主类</option>
+              </select>
+              <select name="select2">
+                <option>选择子类</option>
+                                          </select>
+            </a></td>
+            <td width="31%" bgcolor="#f0f0f0"><input type="submit" name="Submit3" value="确定导入"></td>
+          </tr>
+        </table>
+</form>
+
+
+	</div>
+</body>
+</html>

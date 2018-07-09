@@ -1,0 +1,43 @@
+@charset 'utf-8';
+*{margin:0;padding:0;}
+body{font-family:Microsoft YaHei;color:#1a1a1a;background-color:#fff;font-size:16px;}
+a{text-decoration:none;}
+img{max-width:100%;}
+ul{list-style:none;}
+header{display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;height:2.5rem;padding:0 1.1875rem;font-size:0.8rem;}
+header .share{color:#444;}
+header .share .share-icon{display:inline-block;margin-left:0.4rem;width:0.875rem;height:0.8125rem;background:url(../image/icon-share.png) no-repeat;background-size:0.875rem 0.8125rem;}
+header .goback-btn{width:1rem;height:1rem;background:url(../image/icon-goback.png) no-repeat;background-size:0.5rem 1rem;background-position:0 0;}
+.newtitle{padding:0 1.2rem;font-size:1.2rem;line-height:1.7rem;font-weight:normal;}
+.info{padding:0.5rem 1.1875rem .9rem;border-bottom:1px solid #767676;overflow: hidden;}
+.info p.date{float:left;font-size:0.78125rem;color:#657782;}
+.info p.zan,.info p.edit{float:right;font-size:0.7rem;color:#595959;display:flex;align-items:center;}
+.info p.zan .zan-icon{margin-right:5px;display:inline-block;width:1.47rem;height:1.28rem;background:url(../image/icon-zan.png) no-repeat;background-size:1.47rem 1.28rem;margin-left:1.1rem;}
+.info p.edit .edit-icon{margin-right:5px;display:inline-block;width:1.47rem;height:1.47rem;background:url(../image/icon-edit.png) no-repeat;background-size:1.47rem 1.47rem;margin-left:1.1rem;margin-top:-3px;}
+.tags{margin:0.875rem 1.1875rem 0.6875rem;display:flex;flex-flow:row wrap;justify-content:flex-start;align-items:center;font-size:0.625rem;}
+.tags li{margin-right:1rem;margin-bottom:.5rem;}
+.tags li a{padding:0 0.688rem;display:block;color:#bc1200;border:1px dashed #bc1200;height:1.1875rem;line-height:1.1875rem;border-radius:3px;}
+.tags li a.active{background-color:#bc1200;border:1px solid #bc1200;color:#fff;}
+article{font-size:0.9375rem;}
+article .description{margin:0 1.1875rem 0.75rem;padding:0.56rem 1.125rem;border-radius:0.25rem;background:#f7f7f7;line-height:1.375rem;font-size:.8rem;}
+article .body{margin:0 1.1875rem 4rem;line-height:1.5rem;}
+footer{padding:0 1.1875rem;position:fixed;left:0;right:0;bottom:0;height:2.34rem;font-size:.7rem;background:#bc1200;color:#fff;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center;}
+footer a{color:#fff;}
+footer ul{display:flex;flex-flow:row nowrap;align-items:center;}
+footer ul li{margin-right:1.5625rem;display:flex;align-items:center;flex-flow:row nowrap;}
+footer ul li i{margin-right:.3rem;}
+footer .collection-icon{width:1.22rem;height:1.156rem;background:url(../image/icon-shoucang.png) no-repeat;background-size:100% 100%;}
+footer .pdf-icon{width:1.22rem;height:1.156rem;background:url(../image/icon-pdf.png) no-repeat;background-size:100% 100%;}
+footer .email-icon{width:1.22rem;height:1.156rem;background:url(../image/icon-email.png) no-repeat;background-size:100% 100%;}
+
+/*
+举报样式
+*/
+.report{display: none;width: 20rem;height: 26rem;}
+.content{width:14px;height:14px;border-radius:100px;display: inline-block;border:1px solid #d40d0d;margin-right: 0.2rem;margin-left: 1rem}
+.but{background-color:#d40d0d}
+.Report-list{height: 14.4rem;}
+.Report-list ul li{padding-top: 1rem;border-bottom: 1px solid #d3d4d3;padding-bottom: 0.5rem;}
+.inroduction{height: 6rem;width: 100%;}
+.test{height: 2rem;background-color: #d6efe9;padding-left: 1rem;line-height: 2rem;font-weight: bold}
+.confirm{width:100%;height: 37px;background-color: #d52c12;color: #e6e6e6;text-align:center;font-size:18px;line-height: 40px;border: none;outline: none;margin-top: 0.5rem;border-radius: 25px}

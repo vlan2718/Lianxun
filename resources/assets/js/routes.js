@@ -1,0 +1,108 @@
+import VueRouter from 'vue-router'
+
+let routes=[
+    {
+        path:'/',
+        component:require('./components/Home')
+    },
+    {
+        path:'/test',
+        component:require('./components/Test')
+    },
+    {
+        path:'/admin/member/Lavel',
+        component:require('./components/member/memberLavel')
+    },
+    {
+        path:'/admin/member/JifenConfig',
+        component:require('./components/member/memberJifenConfig')
+    },
+    {
+        path:'/admin/member/Admin',
+        component:require('./components/member/MembersAdmin')
+    },
+    {
+        path:'/admin/member/Info/:id',
+        component:require('./components/member/memberInfo')
+    },{
+        path:'/admin/modManagePwd',
+        component:require('./components/admin/modManagePwd')
+    },
+    {
+        path:'/admin/message/NewsClass',
+        component:require('./components/message/NewsClass')
+    },
+    {
+        path:'/admin/message/NewsClassSon/:id',
+        component:require('./components/message/NewsClassSon')
+    },
+    {
+        path:'/admin/message/stateTagAdmin',
+        component:require('./components/message/stateTagAdmin')
+    },
+    {
+        path:'/admin/message/tagAdmin',
+        component:require('./components/message/tagAdmin')
+    },
+    {
+        path:'/admin/message/newsadmin',
+        component:require('./components/message/newsadmin')
+    },
+    {
+        path:'/admin/advertise/indexAd',
+        component:require('./components/indexAd/indexAd')
+    },
+    {
+        path:'/admin/message/newsEdit/:id',
+        component:require('./components/message/newsEdit')
+
+    },{
+        path:'/admin/message/createNewAdminIndex',
+        component:require('./components/message/createnewsEdit')
+    },
+    {
+        path:'/admin/message/MemberNewsAdmin',
+        component:require('./components/message/MemberNewsAdmin')
+    },{
+        path:'/admin/system/ManageFunSetOk/:id',
+        component:require('./components/system/ManageFunSetOk')
+
+    },{
+        path:'/admin/role_error',
+        component:require('./components/role_error')
+
+    },{
+        path:'/admin/message/getnewsEditMemberNews/:id',
+        component:require('./components/message/membernewsEdit')
+    },
+    {
+        path:'/admin/system/systemSetup',
+        component:require('./components/system/systemSetup')
+    },
+    {
+        path:'/admin/system/ManageFunSet',
+        component:require('./components/system/ManageFunSet')
+    },
+    {
+        path:'/admin/system/ManageFunSets/:id',
+        component:require('./components/system/ManageFunSets')
+    },
+    {
+        path:'/admin/system/suggest',
+        component:require('./components/system/suggest')
+    },
+    {
+        path:'/admin/system/systemLog',
+        component:require('./components/system/systemLog')
+    },
+    {
+        path:'/admin/message/jiedu/:id',
+        component:require('./components/message/Jiedu')
+    }
+
+];
+
+export default new VueRouter({
+    mode:'history',
+    routes
+});

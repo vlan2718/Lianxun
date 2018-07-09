@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>信息管理</title>
+    <link href="{{asset('admin/css/init.css?v=1')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('admin/css/main.css?v=524')}}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="topline">
+<div id="adminTitle">信息管理 > 信息分类管理</div>
+</div>
+<div id="adminbody">
+<form name="form1" method="post" action="">
+  <table width="100%" border="0" cellspacing="0" cellpadding="5" class="tableLists">
+	<tr class="tableHeader">
+	  <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+	  <td align="center">ID</td>
+	  <td align="center">信息分类</td>
+	  <td align="center">默认推荐</td>
+	  <td align="center">主类显示</td>
+	  <td align="center">修改</td>
+	  <td align="center">名下子类</td>
+	  <td align="center">删除</td>
+	</tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox2" value="checkbox"></td>
+      <td align="center">1</td>
+      <td align="center">政治资讯</td>
+      <td align="center">推荐</td>
+      <td align="center">不显示</td>
+      <td align="center">修改</td>
+      <td align="center"><a href="{{asset('admin/message/NewsSubClass')}}">名下子类</a></td>
+      <td align="center">删除</td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox3" value="checkbox"></td>
+      <td align="center">2</td>
+      <td align="center">经济资讯</td>
+      <td align="center">推荐</td>
+      <td align="center">显示</td>
+      <td align="center">修改</td>
+      <td align="center"><a href="{{asset('admin/message/NewsSubClass')}}">名下子类</a></td>
+      <td align="center">删除</td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox4" value="checkbox"></td>
+      <td align="center">3</td>
+      <td align="center">政治资讯</td>
+      <td align="center">推荐</td>
+      <td align="center">显示</td>
+      <td align="center">修改</td>
+      <td align="center"><a href="{{asset('admin/message/NewsSubClass')}}">名下子类</a></td>
+      <td align="center">删除</td>
+    </tr>
+    <tr>
+      <td align="center"><input type="checkbox" name="checkbox42" value="checkbox"></td>
+      <td align="center">4</td>
+      <td align="center">企业资讯</td>
+      <td align="center">推荐</td>
+      <td align="center">显示</td>
+      <td align="center">修改</td>
+      <td align="center"><a href="{{asset('admin/message/NewsSubClass')}}">名下子类</a></td>
+      <td align="center">删除</td>
+    </tr>
+  </table>
+</form>
+</div>
+
+<div style="width:40%;margin:auto;margin-top:20px;">
+<form name="form2" method="post" action="">
+  <table width="100%" border="0" cellspacing="0" cellpadding="10" class="addEditTable">
+    <tr>
+      <td width="24%" align="right">分类名称</td>
+      <td width="25%"><input type="text" name="textfield"></td>
+      <td width="45%"><input type="submit" name="Submit" value="添加"></td>
+      <td width="6%">&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</div>
+
+</body>
+</html>

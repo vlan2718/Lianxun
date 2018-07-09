@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+body {background:#fcfcfc;font-size:12px;color:#787878;line-height:20px;}
+#topline { width:100%;height:36px;padding-top:10px; padding-bottom:6px; border-bottom:1px solid #CCC; background:#FFF}
+#adminTitle {float:left;width:400px;padding:8px;font-size:14px; color:#003366;line-height:22px}
+#rightFun { float:right;padding:8px;line-height:22px;}
+#rightFun .rightFunBtn { float:right; margin-left:10px; margin-right:10px;padding:1px;padding-left:10px; padding-right:10px; background:#0099CC; color:#FFF; border-radius:4px;}
+#rightFun .rightFunBtn a { color:#FFF;}
+#adminbody { margin-top:0px;}
+
+.tableLists {}
+.tableLists td { background:#FFF;border-bottom:1px solid #f0f0f0;height:30px}
+.tableHeader td { background:#f0f0f0; font-weight:bold; color:#333; height:28px;border-bottom:1px solid #CCC;}
+.tableLists td a:link { text-decoration:none; color:#006699}
+.tableLists td a:visited { text-decoration:none;color:#006699}
+.tableLists td a:hover { text-decoration:none;color:#FF3300}
+
+.addEditTable { background:#FFFFCC}
+
+#pages { padding:15px;}
+#pages .allFun { float:left;}
+#pages .pages { float:right;}
+.delBtn { height:25px; line-height:25px; text-align:center; padding-left:10px; padding-right:10px; border:0px;background:#CCC; color:#FFF; border-radius:5px;}
+.button { height:25px; line-height:25px; text-align:center; padding-left:10px; padding-right:10px; border:0px;background:#0099CC; color:#FFF; border-radius:5px;}
+#pages .pages li {float:left;margin-left:20px;width:20px; height:20px; border:1px solid #CCC; text-align:center; line-height:20px}
+
+
+.addTagList li { float:left;margin-right:10px; border-radius:3px;width:auto;padding:2px;padding-left:10px;padding-right:10px; background:#66CC00; color:#FFF;}
